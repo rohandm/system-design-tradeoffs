@@ -1,0 +1,160 @@
+{
+  "attributes": {
+      "query": "Type of data?"
+  },
+  "children": [
+      {
+    "name": "Structured",
+          "attributes": {
+              "query": "Use case?"
+          },
+          "children": [
+              {
+        "name": "ACID transactions (OLTP)",
+        "attributes": {
+          "query": "Cloud?"
+        },
+                  "children": [
+                      {
+                          "name": "AWS: RDS, Aurora"
+                      },
+                      {
+                          "name": "Azure: Azure SQL Database"
+                      },
+                      {
+                          "name": "GCP: Cloud SQL, Spanner"
+                      },
+                      {
+                          "name": "Cloud Agnostic: SQL Server, Oracle, MySQL, PostgreSQL"
+                      }
+                  ]
+              },
+              {
+        "name": "ACID transactions (OLAP)",
+        "attributes": {
+          "query": "Cloud?"
+        },
+                  "children": [
+                      {
+                          "name": "AWS: RedShift"
+                      },
+                      {
+                          "name": "Azure: Azure Synapse"
+                      },
+                      {
+                          "name": "GCP: BigQuery"
+                      },
+                      {
+                          "name": "Cloud Agnostic: Snowflake, Clickhouse, Databricks"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+    "name": "Semi Structured",
+          "attributes": {
+              "query": "Data subtype?"
+          },
+          "children": [
+              {
+        "name": "Key-value",
+        "attributes": {
+          "query": "Use case?"
+        },
+                  "children": [
+                      {
+                          "name": "In memory cache",
+            "attributes": {
+              "query": "Cloud?"
+            },
+            "children": [
+              {
+                "name": "AWS: RedShift"
+              },
+              {
+                "name": "Azure: Azure Synapse"
+              },
+              {
+                "name": "GCP: BigQuery"
+              },
+              {
+                "name": "Cloud Agnostic: Snowflake, Clickhouse, Databricks"
+              }
+            ]
+                      },
+            {
+                          "name": "Persistent",
+            "attributes": {
+              "query": "Cloud?"
+            },
+            "children": [
+              {
+                "name": "AWS: RedShift"
+              },
+              {
+                "name": "Azure: Azure Synapse"
+              },
+              {
+                "name": "GCP: BigQuery"
+              },
+              {
+                "name": "Cloud Agnostic: Snowflake, Clickhouse, Databricks"
+              }
+            ]
+                      }
+        ]
+      },
+              {
+        "name": "2D Key-value",
+        "attributes": {
+          "query": "Use case?"
+        },
+                  "children": [
+                      {
+                          "name": "In memory cache",
+            "attributes": {
+              "query": "Cloud?"
+            },
+            "children": [
+              {
+                "name": "AWS: RedShift"
+              },
+              {
+                "name": "Azure: Azure Synapse"
+              },
+              {
+                "name": "GCP: BigQuery"
+              },
+              {
+                "name": "Cloud Agnostic: Snowflake, Clickhouse, Databricks"
+              }
+            ]
+                      },
+            {
+                          "name": "Persistent",
+            "attributes": {
+              "query": "Cloud?"
+            },
+            "children": [
+              {
+                "name": "AWS: RedShift"
+              },
+              {
+                "name": "Azure: Azure Synapse"
+              },
+              {
+                "name": "GCP: BigQuery"
+              },
+              {
+                "name": "Cloud Agnostic: Snowflake, Clickhouse, Databricks"
+              }
+            ]
+                      }
+        ]
+      }
+          ]
+      }
+  ],
+  "name": "Choosing database"
+}
